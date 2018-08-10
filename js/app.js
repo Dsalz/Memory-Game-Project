@@ -32,7 +32,7 @@ let moveCount;
 
 let timerCount;
 
-let timerInvertal;
+let timerInterval;
 
 let starsContent; 
 
@@ -96,15 +96,13 @@ var gameTimer = function(){
         
       start: function(){
           
-        clearInterval(timerInvertal);
-          
         timerInterval = setInterval(updateTime, 1000);
           
       }
         ,
       stop: function(){
           
-      clearInterval(timerInvertal);
+      clearInterval(timerInterval);
           
       }
         
