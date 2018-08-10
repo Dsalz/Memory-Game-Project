@@ -304,7 +304,7 @@ function animateRightCard(chosenCard){
 //function for checking if all cards are solved and displaying the congrats screen if so
     
 function finito(){
-    
+   
   if (solvedCards == 16){
       
 // adding player stats to congrats screen
