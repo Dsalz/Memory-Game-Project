@@ -84,8 +84,6 @@ starsSection.innerHTML= starsContent;
 
 var gameTimer = function(){
     
-    var timez;
-    
   function updateTime(){
       
     timerCount++; 
@@ -98,13 +96,15 @@ var gameTimer = function(){
         
       start: function(){
           
-        timez = setInterval(updateTime, 1000);
+        clearInterval(timerInvertal);
+          
+        timerInterval = setInterval(updateTime, 1000);
           
       }
         ,
       stop: function(){
           
-      clearInterval(timez);
+      clearInterval(timerInvertal);
           
       }
         
