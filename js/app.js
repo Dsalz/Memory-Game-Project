@@ -1,20 +1,4 @@
 
-
-
-function shuffle(array) {  
-    var currentIndex = array.length, temporaryValue, randomIndex;
-
-    while (currentIndex !== 0) {
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
-    }
-
-    return array;
-}
-  
 //Array of fontAwesome icons to be shuffled when game starts
 
 let originalArray = ["diamond", "paper-plane-o", "anchor", "bolt", "cube", "leaf", "bicycle", "bomb", "bolt" , "paper-plane-o" , "bicycle", "diamond", "anchor", "cube", "leaf", "bomb"];
@@ -45,6 +29,21 @@ let moveCounter = document.querySelector('.moves');
 let starsSection = document.querySelector('.stars');
 
 let timerSection = document.querySelector('.timer');
+
+
+function shuffle(array) {  
+    let currentIndex = array.length, temporaryValue, randomIndex;
+
+    while (currentIndex !== 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+}
 
 
 //calling the function that starts new game
@@ -82,7 +81,7 @@ starsSection.innerHTML= starsContent;
 
 //IIFE used for the Game's Timer declared
 
-var gameTimer = function(){
+const gameTimer = function(){
     
   function updateTime(){
       
@@ -118,9 +117,9 @@ gameTimer.stop();
 
 //looping through the array to create cards and append them to the page  
     
-for(var i=0; i<16; i++){
+for(let i=0; i<16; i++){
 
-var card = document.createElement('li');
+let card = document.createElement('li');
     
 card.classList.add('card');
     
