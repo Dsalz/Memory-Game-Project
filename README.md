@@ -3,7 +3,7 @@
 ## Table of Contents
 
 * [About](#about)
-* [How to play](#how to play)
+* [How to play](#howtoplay)
 * [Dependencies](#dependencies)
 
 ## About
@@ -17,7 +17,7 @@
 - But above all HAVE FUN!
 
 
-
+![game screenshot](img/Memory Game Screenshot.jpg?raw=true "Screenshot")
 
 
 ## Dependencies
