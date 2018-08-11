@@ -19,7 +19,7 @@
 
 ![game screenshot](img/Memory Game Screenshot.jpg?raw=true "Screenshot")
 
-[![solarized dualmode](https://github.com/altercation/solarized/raw/master/img/solarized-yinyang.png)](#features)
+[![game screenshot](https://github.com/Dsalz/Memory-Game-Project/blob/master/img/Memory%20Game%20Screenshot.png)](#screenshot)
 
 
 ## Dependencies
